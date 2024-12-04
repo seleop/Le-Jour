@@ -1,0 +1,356 @@
+@font-face {
+  font-family: "avenirnextltpro";
+  src: url(../font/avenirnextltpro-regular.otf);
+}
+@font-face {
+  font-family: "raleaway";
+  src: url(../font/Raleway-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "raleaway";
+  background-color: #f0e7db;
+}
+
+header.active {
+  top: 0px;
+  width: 100%;
+}
+
+header {
+  width: 1723px;
+  height: 75px;
+  top: 25px;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s;
+  z-index: 10;
+}
+header .inner {
+  height: 100%;
+  padding: 0 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+header .inner nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 80px;
+}
+header .inner nav .gnb {
+  height: 100%;
+  display: flex;
+  gap: 40px;
+}
+header .inner nav .gnb .depth1 {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+header .inner nav .gnb .depth1:hover {
+  font-weight: bold;
+}
+header .inner nav .gnb .depth1 .depth02_wrap {
+  display: none;
+  width: 1723px;
+  background-color: #fff;
+  position: absolute;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02_title {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+  height: 34px;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 20px;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02_title i {
+  font-size: 24px;
+  color: #333;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02_title h1 {
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  letter-spacing: 0;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02 li {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02 li .depth03 {
+  padding-top: 10px;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02 li .depth03 li {
+  font-size: 13px;
+  font-weight: 200;
+  color: #aaaaaa;
+  padding-bottom: 6px;
+  transition: 0.3s;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth02_contents .depth02 li .depth03 li:hover {
+  color: #dddddd;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth_img {
+  width: 919px;
+  height: 465px;
+}
+header .inner nav .gnb .depth1 .depth02_wrap .depth02_inner .depth_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+header .inner .util {
+  display: flex;
+  gap: 40px;
+  font-family: "raleaway";
+  font-weight: 200;
+}
+header .inner .util .lang {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+header .inner .util .lang ul {
+  width: auto;
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  display: none;
+}
+header .inner .util .lang ul li {
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 12px 22px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+header .inner .util .top_menu {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+header .inner .util .top_menu i {
+  color: #555;
+  font-size: 18px;
+}
+header .inner .util .top_menu li:nth-child(5) {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.section2 .main-link {
+  width: 1160px;
+  margin: 45px auto 0 auto;
+  display: flex;
+}
+.section2 .main-link .main-link-item {
+  width: 33%;
+  height: 150px;
+  background-color: #fff;
+  display: flex;
+  color: #53513d;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+.section2 .main-link .main-link-item::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  width: 1px;
+  height: 60%;
+  background-color: #d7d7d7;
+}
+.section2 .main-link .main-link-item:nth-child(3)::after {
+  height: 0%;
+}
+.section2 .main-link .main-link-item:hover {
+  background-color: #53513d;
+  color: #fff;
+}
+.section2 .main-link .main-link-item:nth-child(3) div p {
+  font-size: 14px;
+}
+.section2 .main-link .main-link-item .main-link-textwrap {
+  text-align: center;
+  line-height: 32px;
+}
+.section2 .main-link .main-link-item .main-link-textwrap span {
+  font-size: 22px;
+  font-weight: bold;
+}
+.section2 .main-link .main-link-item .main-link-textwrap p {
+  font-size: 15px;
+}
+
+.section3 .main-choice {
+  width: 1640px;
+  margin: 130px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+  justify-content: space-between;
+  color: #53513d;
+}
+.section3 .main-choice h2 {
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+.section3 .main-choice .choice-category span {
+  padding: 8px 20px;
+  display: inline-block;
+  color: rgba(83, 81, 61, 0.6);
+  position: relative;
+  cursor: pointer;
+}
+.section3 .main-choice .choice-category span.active {
+  font-weight: bold;
+  color: #53513d;
+  border-bottom: 2px solid #53513d;
+}
+.section3 .main-choice .choice-category span::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 30%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(83, 81, 61, 0.6);
+}
+.section3 .main-choice .choice-category span:last-child::after {
+  height: 0%;
+}
+.section3 .main-choice .choice-container {
+  width: 100%;
+  display: none;
+}
+.section3 .main-choice .choice-container.active {
+  display: block !important;
+}
+.section3 .main-choice .choice-container .swiper-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice {
+  width: 308px;
+  height: 485px;
+  display: flex;
+  flex-direction: column;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-imgwrap {
+  width: 100%;
+  height: 100%;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-imgwrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap {
+  padding: 30px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap p {
+  color: #716f5e;
+  font-size: 13px;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap strong {
+  color: #53513d;
+  font-size: 15px;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap .choice-text-spanwrap {
+  padding-top: 10px;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap .choice-text-spanwrap span {
+  font-size: 15px;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap .choice-text-spanwrap span:nth-child(1) {
+  color: #bab7a4;
+  text-decoration: line-through;
+}
+.section3 .main-choice .choice-container .swiper-wrapper .set-choice .choice-textwrap .choice-text-spanwrap span:nth-child(3) {
+  color: #53513d;
+  font-weight: bold;
+}
+
+.transparentbgr {
+  background-color: #bab7a4;
+}
+.transparentbgr:last-child {
+  background-color: #d2c3a1;
+}/*# sourceMappingURL=1.css.map */
